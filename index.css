@@ -1,0 +1,144 @@
+/* 마진, 패딩, 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  /* rem 기본 사이즈 */
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* 헤더 디자인 */
+.Header {
+  display: flex;
+  background-color: white;
+  min-width: 360px;
+  border-bottom: 1px solid rgb(227 227 226);
+  padding: 2%;
+  height: 4rem;
+  font-weight: 550;
+}
+.Header .NavigationBar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.tagGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tag {
+  font-size: 13px;
+  color: rgb(106 106 106);
+  padding: 3px;
+  background-color: rgb(243 243 243);
+  border-radius: 3px;
+  margin: 0px;
+}
+
+#loginRegister {
+  all: unset;
+  position: absolute;
+  right: 44px;
+  border: 1px solid rgb(227 227 226);
+  padding: 13px;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* 중간 디자인 */
+.middleBox {
+  text-align: center;
+  padding: 5rem;
+}
+
+.middleBox .titleText {
+  font-size: 42px;
+  color: black;
+}
+#title1 {
+  margin-top: 5.5rem;
+  color: rgb(237 119 40);
+}
+#title2 {
+  margin-bottom: 1rem;
+  color: rgb(31 31 31);
+}
+.expText {
+  font-size: 1rem;
+  color: #737373;
+}
+
+.searchBox {
+  display: flex;
+  text-align: center;
+  border-radius: 2rem;
+  border: 3px solid rgb(237 119 40);
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+.aiIcon {
+  all: unset;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.aiIcon img {
+  height: 1.5rem;
+  width: 3rem;
+}
+.searchInputButton {
+  color: rgb(237 125 43);
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+/* 중 하단부 공통 */
+.bodyBox {
+  background: linear-gradient(to bottom, rgb(252 244 237), white);
+  display: flex;
+  justify-content: center;
+}
+
+/* 하단 디자인 */
+.iconGrid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.75rem;
+}
+.iconContainer {
+  position: relative;
+  text-align: center;
+}
+.iconContainer .tag {
+  position: absolute;
+  left: 2.3rem;
+  color: white;
+  background-color: rgb(236 118 40);
+  border-radius: 1rem;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+.iconImage {
+  border-radius: 1.5rem;
+  height: 84px;
+  width: 84px;
+  padding: 0.5rem;
+}
