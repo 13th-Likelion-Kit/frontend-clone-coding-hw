@@ -147,6 +147,7 @@ main {
   justify-content: center;
   gap: 50px;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .icon-item {
