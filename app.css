@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0px 20px;
+  height: 63.2px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: flex;
+  white-space: nowrap;
+  padding: 20px 12px;
+}
+li span {
+  font-size: 10px;
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  color: #737373;
+  border-radius: 05px;
+}
+
+.login-btn {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 14px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+section {
+  background: linear-gradient(
+    to bottom,
+    #fef5ef 70%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  text-align: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin: 0px;
+  font-size: 42px;
+}
+.orange-title {
+  margin-top: 88px;
+  color: #ff7710;
+}
+.title p {
+  font-size: 18px;
+  color: #737373;
+}
+
+br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+  .orange-title {
+    margin-top: 48px;
+  }
+  .title p {
+    font-size: 16px;
+    color: #737373;
+  }
+  br {
+    display: inline;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.button-wrapper button {
+  width: 95%;
+  max-width: 800px;
+  height: 62px;
+  padding: 16px;
+  border: 2px solid #ff7710;
+  border-radius: 999px;
+  background-color: white;
+  color: #ff7710;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-left {
+  display: flex;
+  align-items: center;
+}
+
+.button-left img {
+  height: 25px;
+}
+.arrow,
+.button-left p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.button-left p {
+  margin: 0px 10px;
+  color: #ff9a2c;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-item img {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  border-radius: 35%;
+}
+
+@media (max-width: 768px) {
+  .icon-item img {
+    width: 60px;
+    height: 60px;
+  }
+  main {
+    gap: 20px;
+  }
+
+  .icon-item p {
+    font-size: 12px;
+  }
+}
